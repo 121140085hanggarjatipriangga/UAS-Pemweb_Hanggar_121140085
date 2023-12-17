@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Page Admin</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 style="text-align: center;">Edit Data Pariwisata</h1>
+        <form id="beritaForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nama">Judul Berita:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="detail">Detail Berita:</label>
+                <textarea name="detail" id="detail" placeholder="Detail Berita..."></textarea>
+            </div>
+
+            <div class="form-group" ">
+                <label for="penulis">Penulis Berita:</label>
+                <input type="text" id="penulis" name="penulis" required>
+            </div>
+
+            <div class="form-group" style="padding-bottom: 10px;">
+                <label for="tanggal">Tangal:</label>
+                <input type="date" id="tanggal" name="tanggal" required>
+            </div>
+
+            <div class="form-group">
+                <label for="jenis">Jenis Berita:</label>
+                <select id="jenis" name="jenis">
+                    <option value="Berita Teknologi">Berita Teknologi</option>
+                    <option value="Berita Nasional">Berita Nasional</option>
+                    <option value="Berita Sejarah">Berita Sejarah</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+
+            <div class="button-group">
+                <button type="reset" id="resetFormButton">Reset Form</button>
+                <button type="submit" id="tambahDataButton">Tambah Data</button>
+            </div>
+        </form>
+
+        <table id="tabelBerita">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Detail</th>
+                    <th>Tanngal</th>
+                    <th>Jenis</th>
+                    <th>Penulis</th>
+                    <th>Foto</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <a href="index.html"><button>Home</button></a>
+    </div>
+
+    <script src="js/homeadmin.js"></script>
+</body>
+</html>
